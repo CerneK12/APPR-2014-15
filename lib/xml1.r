@@ -9,30 +9,30 @@ stripByPath <- function(x, path) {
                     function(y) gsub("^\\s*(.*?)\\s*$", "\\1", xmlValue(y))))
 }
 
-uvozi.obsojeni <- function() {
-  url.obsojeni <- "podatki/obsojenir.htm"
-  doc.obsojeni <- htmlTreeParse(url.obsojeni, useInternalNodes=TRUE,
+uvozi.diplomanti <- function() {
+  url.diplomanti <- "podatki/diplomantir.htm"
+  doc.diplomanti <- htmlTreeParse(url.diplomanti, useInternalNodes=TRUE,
                                 encoding="UTF-8")
   
   # Poiščemo vse tabele v dokumentu
-  tabele <- getNodeSet(doc.obsojeni, "//table")
+  tabele1 <- getNodeSet(doc.diplomanti, "//table")
   
   # Iz druge tabele dobimo seznam vrstic (<tr>) neposredno pod
   # trenutnim vozliščem
-  vrstice <- getNodeSet(tabele[[1]], ".//tr")
-
+  vrstice1 <- getNodeSet(tabele1[[1]], ".//tr")
+  
   
   # Seznam vrstic pretvorimo v seznam (znakovnih) vektorjev
   # s porezanimi vsebinami celic (<td>) neposredno pod trenutnim vozliščem
-  seznam <- lapply(vrstice[5:length(vrstice)-1], stripByPath, "./td")
+  seznam1 <- lapply(vrstice1[5:length(vrstice1)-1], stripByPath, "./td")
   
   # Iz seznama vrstic naredimo matriko
-  matrika <- matrix(unlist(seznam), nrow=length(seznam), byrow=TRUE)
+  matrika1 <- matrix(unlist(seznam1), nrow=length(seznam1), byrow=TRUE)
   
   # Imena stolpcev matrike dobimo iz celic (<th>) glave (prve vrstice) prve tabele
-  colnames(matrika) <- 2006:2013
+  colnames(matrika1) <- 2006:2013
   
-  imena <- unlist(lapply(vrstice[5:length(vrstice)-1], stripByPath, "./th"))
+  imena1 <- unlist(lapply(vrstice1[5:length(vrstice1)-1], stripByPath, "./th"))
   
   # Podatke iz matrike spravimo v razpredelnico
   return(data.frame(apply(matrika, 2, as.numeric), row.names=imena))

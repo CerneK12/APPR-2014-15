@@ -3,7 +3,7 @@
 
 #Tabela OBSOJENI
 
-# Funkcija, ki uvozi podatke iz datoteke druzine.csv
+# Funkcija, ki uvozi podatke iz datoteke obsojeni.csv
 uvoziObsojeni <- function() {
   return(read.table("podatki/obsojeni.csv", sep = ";", as.is = TRUE,
                       col.names = c("obcina", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
