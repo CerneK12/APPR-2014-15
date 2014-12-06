@@ -4,7 +4,10 @@
 
 source("uvoz/uvoz1.r") #obsojeni
 source("uvoz/uvoz2.r") #diplomanti
-source("uvoz/uvoz3.r") #brezposelni
+source("uvoz/uvoz4.r") #xml-obsojeni
+source("uvoz/uvoz5.r") #xml-diplomanti
+source("uvoz/pitao.r") #graf-obsojeni
+source("uvoz/grafd.r") #graf-diplomanti
 
 
 
