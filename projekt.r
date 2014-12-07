@@ -4,8 +4,10 @@
 
 source("uvoz/uvoz1.r") #obsojeni
 source("uvoz/uvoz2.r") #diplomanti
-source("uvoz/pitao.r") #graf-obsojeni
-source("uvoz/grafd.r") #graf-diplomanti
+source("uvoz/pita_obsojeni.r") #graf-obsojeni
+source("uvoz/graf_obsojeni.r") #graf-obsojeni
+source("uvoz/pita_diplomanti.r") #graf-diplomanti
+source("uvoz/graf_diplomanti.r") #graf-diplomanti
 source("lib/xml.r") #xml-obsojeni
 source("lib/xml1.r") #xml-diplomanti
 
