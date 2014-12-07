@@ -23,7 +23,7 @@ for(i in 1:12){
 title("DIPLOMANTI")
 
 #legenda
-legend("bottomright", diplomanti[,"obcina"], cex=0.5, col=barve,
+legend("bottomright", diplomanti[,"obcina"], cex=0.6, col=barve,
        pch=reg, lty=reg, title="Regije")
 
 dev.off()
