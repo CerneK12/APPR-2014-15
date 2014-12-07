@@ -24,12 +24,13 @@ Cilj projekta je skozi analizo podatkov spoznati program R.
 
 Obdelavo podatkov sem pričela z uvozom cvs datotek iz spletne strani Statističnega urada.
 Naredila sem dve tabeli in sicer, prva je o obsojenih fizičnih osebah po regijah v Sloveniji od leta 2006 do leta 2013 - datoteka obsojenir.csv, druga pa o diplomantih terciarnega izobraževanja po statistični regiji stalnega prebivališča, prav tako od leta 2006 do leta 2013 - datoteka diplomantir.csv.
-Nato sem v datoteki uvoz napisala funkciji za obe tabeli - uvoz1.r je tabela o obsojenih fizičnih osebah, uvoz2.r pa tabela o diplomantih.
-Narisala sem tudi graf o obsojenih fizičnih osebah v letu 2007 po regijah - pitao.R in graf o diplomantih po regijah v letu 2007 - grafd.R in sliki shranila v pdf obliki v mapo slike.
-Pri grafu o diplomantih imam problem, ker mi na x osi namesto imen regij izpiše zaporedno številko.
+Nato sem v mapi uvoz napisala funkciji za obe tabeli - uvoz1.r je tabela o obsojenih fizičnih osebah, uvoz2.r pa tabela o diplomantih.
+V mapi uvoz se nahajajo tudi štirje grafi. $pita_diplomanti.R$ prikazuje delež diplomantov po regijah, $pita_obsojeni.R$ pa delež obsojenih po regijah. $graf_diplomanti.R$ prikazuje kako se je spreminjalo število diplomantov od leta 2006 do leta 2013 za vsako izmed regij, $graf_obsojeni.R$ pa prikazuje spremembo obsojenih fizičnih osebah od leta 2006 do 2013 prav tako za vsako izmed regij. Grafi se shranijo v mapo slike v obliki pdf.
 
 \includegraphics[width=\textwidth]{../slike/leto_2007_obsojeni.pdf}
 \includegraphics[width=\textwidth]{../slike/leto_2007_diplomanti.pdf}
+\includegraphics[width=\textwidth]{../slike/diplomanti.pdf}
+\includegraphics[width=\textwidth]{../slike/obsojeni.pdf}
 
 \section{Analiza in vizualizacija podatkov}
 
@@ -40,3 +41,4 @@ Pri grafu o diplomantih imam problem, ker mi na x osi namesto imen regij izpiše
 %\includegraphics{../slike/naselja.pdf}
 
 \end{document}
+
