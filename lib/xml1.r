@@ -35,5 +35,6 @@ uvozi.diplomanti <- function() {
   imena1 <- unlist(lapply(vrstice1[5:length(vrstice1)-1], stripByPath, "./th"))
   
   # Podatke iz matrike spravimo v razpredelnico
-  return(data.frame(apply(matrika, 2, as.numeric), row.names=imena))
+  return(data.frame(apply(matrika1, 2, as.numeric), row.names=imena1))
 }
+

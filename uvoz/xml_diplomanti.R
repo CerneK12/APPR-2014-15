@@ -1,2 +1,2 @@
 source("lib/xml.r")
-DIPLOMANTI <- uvoziDiplomanti()
+DIPLOMANTI <- uvozi.diplomanti()
