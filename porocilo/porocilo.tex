@@ -13,29 +13,40 @@ Analiza podatkov s programom R}
 \author{Katarina Černe}
 \maketitle
 
-\section{Izbira teme}
 
+
+\section{Izbira teme}
 Pri predmetu ANPP sem si za temo projekta izbrala Obsojene fizične osebe po občinah stalnega prebivališča, Slovenija.
 
 Analizirala bom, kje v Sloveniji je največ obsojenih, v katerih občinah procent obsojenih najbolj narašča in kje najbolj pada od leta 2006 do leta 2013. Iskala bom, če so kakšne povezave med obsojenimi ter brezposelnostjo in med diplomanti.
 
 Cilj projekta je skozi analizo podatkov spoznati program R.
 
-\section{Obdelava, uvoz in čiščenje podatkov}
 
+
+\section{Obdelava, uvoz in čiščenje podatkov}
 Obdelavo podatkov sem pričela z uvozom cvs datotek iz spletne strani Statističnega urada.
 Naredila sem dve tabeli in sicer, prva je o obsojenih fizičnih osebah po regijah v Sloveniji od leta 2006 do leta 2013 - datoteka obsojenir.csv, druga pa o diplomantih terciarnega izobraževanja po statistični regiji stalnega prebivališča, prav tako od leta 2006 do leta 2013 - datoteka diplomantir.csv.
 Nato sem v mapi uvoz napisala funkciji za obe tabeli - uvoz1.r je tabela o obsojenih fizičnih osebah, uvoz2.r pa tabela o diplomantih.
 V mapi uvoz se nahaja tudi pet grafov. \url|pita_diplomanti.r| prikazuje delež diplomantov po regijah, \url|pita_obsojeni.r| pa delež obsojenih po regijah. \url|gref_diplomanti.r| prikazuje kako se je spreminjalo število diplomantov od leta 2006 do leta 2013 za vsako izmed regij, \url|graf_obsojeni.r| pa prikazuje spremembo obsojenih fizičnih osebah od leta 2006 do 2013 prav tako za vsako izmed regij. \url|zasavska_graf.r| pa prikazuje spreminjanje obsojenih in diplomantov od leta 2006 do 2013 v Zasavju (ko je število diplomantov narastlo, je število obsojenih padlo in obratno). Grafi se shranijo v mapo slike v obliki pdf.
 \includegraphics[width=\textwidth]{../slike/leto_2007_diplomanti.pdf}
 \includegraphics[width=\textwidth]{../slike/diplomanti.pdf}
+
 \includegraphics[width=\textwidth]{../slike/leto_2007_obsojeni.pdf}
 \includegraphics[width=\textwidth]{../slike/obsojeni.pdf}
+
 \includegraphics[width=\textwidth]{../slike/zasavska.pdf}
 
-\section{Analiza in vizualizacija podatkov}
 
-%\includegraphics{../slike/povprecna_druzina.pdf}
+
+\section{Analiza in vizualizacija podatkov}
+3. fazo projekta sem pričela z uvozom zemljevida Slovenija iz spletne strani Statističnega urada Slovenije. Na njem sem prikazala število diplomantov po regijah v letu 2007. Vidimo, da je bilo največ diplomantov v osrednji Sloveniji, nekoliko manj v zahodnem delu, najman pa v vzhodnem delu Slovenije. Zemljevid se shrani v mapo slike v obliki pdf.
+
+\includegraphics{../slike/zemljevid_diplomanti.pdf}
+
+
+
+
 
 \section{Napredna analiza podatkov}
 
