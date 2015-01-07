@@ -15,7 +15,9 @@ source("uvoz/graf_zasavska.r") #graf-zasavska
 
 
 # 3. faza: Analiza in vizualizacija podatkov
-#source("vizualizacija/vizualizacija.r")
+source("vizualizacija/vizualizacija_obsojeni.r")
+source("vizualizacija/vizualizacija_diplomanti.r")
+
 
 # 4. faza: Napredna analiza podatkov
 #source("analiza/analiza.r")
