@@ -13,24 +13,24 @@ regije <- uvozi.zemljevid("http://www.stat.si/doc/Geo/Statisticne_regije_NUTS3.z
 preuredi <- function(podatki, zemljevid) {
   return(data.frame(podatki[order(rownames(podatki)), ])[rank(levels(zemljevid$IME)[rank(zemljevid$IME)]), ])
 }
-
+  
 # Preuredimo podatke, da jih bomo lahko izrisali na zemljevid.
-obsojeni <- preuredi(obsojeni, regije)
+DIPLOMANTI <- preuredi(DIPLOMANTI, regije)
 
 # Izračunamo MIN in MAX vrednost
-min.2007 <- min(obsojeni[3], na.rm=TRUE)
-max.2007 <- max(obsojeni[3], na.rm=TRUE)
+min.2007 <- min(DIPLOMANTI[2], na.rm=TRUE)
+max.2007 <- max(DIPLOMANTI[2], na.rm=TRUE)
 
 # Narišimo zemljevid v PDF.
 cat("Rišem zemljevid...\n")
-pdf("slike/zemljevid_obsojeni.pdf", width=6, height=4)
+pdf("slike/zemljevid_diplomanti.pdf", width=6, height=4)
 
 # n = 100
 # barve = topo.colors(n)[1+(n-1)*(druzine$povprecje-min.povprecje)/(max.povprecje-min.povprecje)]
 # plot(obcine, col = barve)
 
-regije$x2007 <- obsojeni[,3]
-print(spplot(regije, "x2007", col = topo.colors(100), main = "Obsojeni v Sloveniji za leto 2007",
+regije$x2007 <- DIPLOMANTI[,2]
+print(spplot(regije, "x2007", col = topo.colors(100), main = "Diplomanti v Sloveniji za leto 2013",
              sp.layout = list(list("sp.text", coordinates(regije), regije$IME, cex = 0.4))))
 
 dev.off()
