@@ -30,7 +30,11 @@ pdf("slike/zemljevid_diplomanti.pdf", width=6, height=4)
 # plot(obcine, col = barve)
 
 regije$x2007 <- DIPLOMANTI[,2]
+<<<<<<< HEAD
 print(spplot(regije, "x2007", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2007",
+=======
+print(spplot(regije, "x2007", col = terrain.colors(100), main = "Diplomanti v Sloveniji za leto 2007",
+>>>>>>> 748f1b8c438bc72ed7636cdcf276e0d12715bf7e
              sp.layout = list(list("sp.text", coordinates(regije), regije$IME, cex = 0.4))))
 
 dev.off()
