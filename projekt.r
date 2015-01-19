@@ -5,13 +5,13 @@
 
 source("uvoz/csv_obsojeni.r") #obsojeni
 source("uvoz/csv_diplomanti.r") #diplomanti
-source("uvoz/xml_obsojeni.r") #xml-obsojeni
-source("uvoz/xml_diplomanti.r") #xml-diplomanti
-source("uvoz/pita_obsojeni.r") #pita-obsojeni
-source("uvoz/graf_obsojeni.r") #graf-obsojeni
-source("uvoz/pita_diplomanti.r") #pita-diplomanti
-source("uvoz/graf_diplomanti.r") #graf-diplomanti
-source("uvoz/graf_zasavska.r") #graf-zasavska
+source("uvoz/xml_obsojeni.R") #xml-obsojeni
+source("uvoz/xml_diplomanti.R") #xml-diplomanti
+source("uvoz/pita_obsojeni.R") #pita-obsojeni
+source("uvoz/graf_obsojeni.R") #graf-obsojeni
+source("uvoz/pita_diplomanti.R") #pita-diplomanti
+source("uvoz/graf_diplomanti.R") #graf-diplomanti
+source("uvoz/graf_zasavska.R") #graf-zasavska
 
 
 
