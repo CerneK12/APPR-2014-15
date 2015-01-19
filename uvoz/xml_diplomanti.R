@@ -1,2 +1,2 @@
-source("lib/xml.r")
+source("lib/xml1.r")
 DIPLOMANTI <- uvozi.diplomanti()
