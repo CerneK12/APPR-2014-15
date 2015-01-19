@@ -1,5 +1,6 @@
 pdf("slike/obsojeni.pdf")
 
+
 xo <- 2006:2013
 dec.st <- function(x, k) format(round(x, k), nsmall=k)
 mo <- dec.st(min(ceiling(obsojeni[,2:9])),2)

@@ -1,5 +1,6 @@
 # 2. faza: Obdelava, uvoz in čiščenje podatkov
 
+
 #source("uvoz/uvoz.r")
 
 source("uvoz/csv_obsojeni.r") #obsojeni

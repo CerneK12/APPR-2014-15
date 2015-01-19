@@ -1,5 +1,6 @@
 pdf("slike/zasavska.pdf")
 
+
 x <- 2006:2013
 dec.st <- function(x, k) format(round(x, k), nsmall=k)
 m <- dec.st(min(floor(obsojeni[,2:9])),2)
