@@ -1,6 +1,5 @@
 pdf("slike/diplomanti.pdf")
 
-
 x <- 2006:2013
 dec.st <- function(x, k) format(round(x, k), nsmall=k)
 m <- dec.st(min(floor(DIPLOMANTI)),2)
