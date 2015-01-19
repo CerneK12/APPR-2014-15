@@ -28,9 +28,9 @@ pdf("slike/zemljevid_obsojeni.pdf", width=6, height=4)
 # n = 100
 # barve = topo.colors(n)[1+(n-1)*(druzine$povprecje-min.povprecje)/(max.povprecje-min.povprecje)]
 # plot(obcine, col = barve)
-
+popravek.koordinat <- c(0,0,0,0,0,0,-4000,0,0,0,0,0,0,0,0,0,0,3000,-3000,0,0,0,0,-7000)
 regije$x2007 <- obsojeni[,3]
 print(spplot(regije, "x2007", col = heat.colors(100), main = "Obsojeni v Sloveniji za leto 2007",
-             sp.layout = list(list("sp.text", coordinates(regije), regije$IME, cex = 0.4))))
+             sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat, regije$IME, cex = 0.6))))
 
 dev.off()
