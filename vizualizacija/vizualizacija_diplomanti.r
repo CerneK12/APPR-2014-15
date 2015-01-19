@@ -32,6 +32,6 @@ popravek.koordinat <- c(0,0,0,0,0,0,-4000,0,0,0,0,0,0,0,0,0,0,3000,-3000,0,0,0,0
 
 regije$x2007 <- DIPLOMANTI[,2]
 print(spplot(regije, "x2007", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2007",
-             sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.8))))
+             sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.4))))
 
 dev.off()
