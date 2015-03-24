@@ -1,5 +1,12 @@
 # 3. faza: Izdelava zemljevida
 
+
+
+
+#zemljevid obsojeni
+
+
+
 # Uvozimo funkcijo za pobiranje in uvoz zemljevida.
 source("lib/uvozi.zemljevid.r")
 

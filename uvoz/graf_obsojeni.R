@@ -1,3 +1,7 @@
+# graf obsojeni
+
+
+
 pdf("slike/obsojeni.pdf")
 
 xo <- 2006:2013
@@ -23,7 +27,7 @@ for(i in 1:12){
 title("OBSOJENI")
 
 #legenda
-legend("top", obsojeni[,"obcina"], cex=0.7, col=barve,
+legend("top", obsojeni[,"obcina"], cex=0.5, col=barve,
        pch=reg, lty=reg, title="Regije")
 
 dev.off()

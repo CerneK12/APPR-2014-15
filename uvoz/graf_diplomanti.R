@@ -1,3 +1,8 @@
+#graf diplomanti
+
+
+
+
 pdf("slike/diplomanti.pdf")
 
 x <- 2006:2013

@@ -1,5 +1,8 @@
 # 3. faza: Izdelava zemljevida
 
+#zemljevid diplomantov
+
+
 # Uvozimo funkcijo za pobiranje in uvoz zemljevida.
 source("lib/uvozi.zemljevid.r")
 

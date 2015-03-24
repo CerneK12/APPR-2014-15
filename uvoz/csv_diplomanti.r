@@ -1,3 +1,6 @@
+# 2. faza: Uvoz podatkov
+
+
 #Tabela DIPLOMANTI
 
 # Funkcija, ki uvozi podatke iz datoteke diplomanti.csv
