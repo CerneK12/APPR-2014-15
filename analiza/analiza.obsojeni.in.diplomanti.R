@@ -19,8 +19,8 @@ twoord.plot(leta,
             leta,
             vsota.obs,
             xlab="Leta",
-            ylab="delež diplomantov",
-            rylab="delež obsojenih",
+            ylab="delež obsojenih",
+            rylab="delež diplomantov",
             main ="Diplomanti in obsojeni v Sloveniji")
 
 legend("bottomright",

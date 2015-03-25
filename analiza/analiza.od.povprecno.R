@@ -19,8 +19,8 @@ twoord.plot(leta,
             leta,
             abs.obs,
             xlab="Leta",
-            ylab="povprečen delež diplomantov",
-            rylab="povprečen delež obsojenih",
+            ylab="povprečen delež obsojenih",
+            rylab="povprečen delež diplomantov",
             main ="Diplomanti in obsojeni v Sloveniji")
 
 legend("topleft",
