@@ -1,14 +1,18 @@
 # 4. faza: Analiza podatkov
-pdf("slike/analiza.pdf")
+
+
+#graf dip. obs. vsota
+
+
+pdf("slike/analiza.vsota.pdf")
 leta <- 2006:2013
-stolpci <- paste0("X", leta)
 vsota.dip <- colSums(diplomanti[1:12,2:9],na.rm=FALSE)
 vsota.obs <- colSums(obsojeni[1:12,2:9],na.rm=FALSE)
 
 
 library(plotrix)
 
-#nariše graf z dvema koordinatama
+#nariše graf z dvema vred
 
 twoord.plot(leta,
             vsota.dip,
