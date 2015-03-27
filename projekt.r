@@ -21,6 +21,8 @@ source("vizualizacija/vizualizacija_diplomanti.r")
 
 
 # 4. faza: Napredna analiza podatkov
-#source("analiza/analiza.r")
+source("analiza/analiza.od.povprecno.r")
+source("analiza/zemljevid_diplomantov.r")
+
 
 #cat("Končano.\n")

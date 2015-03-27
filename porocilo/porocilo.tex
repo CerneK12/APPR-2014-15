@@ -4,19 +4,48 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{animate}
+% \usepackage{graphics}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{media9}
+
+
 
 \pagestyle{plain}
 
 \begin{document}
-\title{Poročilo pri predmetu \\
-Analiza podatkov s programom R}
-\author{Katarina Černe}
-\maketitle
+
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\center
+\textsc{\LARGE Fakulteta za matematiko in fiziko}\\[3 cm]
+\textsc{\Large Poročilo pri predmetu}\\[0.5cm]
+\textsc{\large Analiza podatkov s programom R}\\[2 cm]
+\HRule \\[0.4cm]
+{ \huge \bfseries Analiza povezave med deležom diplomantov in obsojenih fizičnih osebah v Sloveniji}\\[0.4cm]
+\HRule \\[6 cm]
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Avtor:}\\
+Katarina \textsc{Černe}
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Mentor:} \\
+Dr. Janoš \textsc{Vidali}
+\end{flushright}
+\end{minipage}\\[2 cm]
+{\large \today}\\[3cm]
+\end{titlepage}
+
 
 \section{Izbira teme}
-Pri predmetu ANPP sem si za temo projekta izbrala Obsojene fizične osebe po občinah stalnega prebivališča, Slovenija.
+Pri predmetu ANPP sem si za temo projekta izbrala obsojene fizične osebe po statističnih regijah, Slovenija, letno in diplomanti terciarnega izobraževanja po statistični regiji stalnega prebivališče, Slovenija
 
-Analizirala bom, kje v Sloveniji je največ obsojenih, v katerih občinah procent obsojenih najbolj narašča in kje najbolj pada od leta 2006 do leta 2013. Iskala bom, če so kakšne povezave med obsojenimi ter brezposelnostjo in med diplomanti.
+Iskala bom, če so kakšne povezave med deležem obsojenih in deležem diplomantov od leta 2006 do leta 2013. Analizirala bom tudi, v kateri slovenski regiji je delež obsojenih in diplomantov najvišji oz. najnižji.
 
 Cilj projekta je skozi analizo podatkov spoznati program R.
 
@@ -45,10 +74,39 @@ Zemljevida se shranita v mapo slike v obliki pdf.
 \includegraphics{../slike/zemljevid_diplomanti.pdf}
 \includegraphics{../slike/zemljevid_obsojeni.pdf}
 
-
 \section{Napredna analiza podatkov}
 
-%\includegraphics{../slike/naselja.pdf}
+\includegraphics[width=\textwidth]{../slike/analiza_povprecno.pdf}
+
+%width=6, height=4
+% \animategraphics[loop, width=6, height=4]{1}{../slike/zemljevid_diplomanti.pdf}{1}{8}
+
+% \begin{animateinline}[<options>]{<frame rate>} ... typeset material ...
+% \newframe[<frame rate>]
+% ... typeset material ...
+% \newframe*[<frame rate>]
+% ... typeset material ...
+% \newframe
+% \multiframe{<number of frames>}{[<variables>]}{
+% ... repeated (parameterized) material ... }
+% \end{animateinline}
+% \begin{figure}
+%     \centering
+%     \makeatletter\edef\animcnt{\the\@anim@num}\makeatother%
+%     \animategraphics[label=myAnim,loop,width=\textwidth]{60}{../slike/zemljevid_diplomanti.pdf}{1}{8}
+% 
+%     \mediabutton[jsaction={anim.myAnim.playFwd();}]{\fbox{\strut Play}}
+%     \mediabutton[jsaction={anim.myAnim.pause();}]{\fbox{\strut Pause}}
+%     \caption{Some animation for MWE}
+% \end{figure}
+% 
+
+\begin{figure}[H]
+\animategraphics[controls,width=1.2\linewidth]{0.5}{../slike/diplomanti_}{1}{8} 
+\caption{Animacija, ki prikazuje delež diplomantov po slovenskih regijah od leta 2006 do leta 2014}
+%\animategraphics[autoplay,controls,loop, width=1.2\linewidth]{60}{../slike/zemljevid_diplomanti}{1}{8}\\
+%\caption{Animacija: delež diplomantov po slovenskih regijah od leta 2006 do leta 2013}
+\end{figure}
 
 \end{document}
 

@@ -4,7 +4,7 @@
 #graf dip. obs. abs. vrednost
 
 
-pdf("slike/analiza.povprecno.pdf")
+pdf("slike/analiza_povprecno.pdf")
 leta <- 2006:2013
 abs.dip <- apply(diplomanti[1:12,2:9],2,mean)
 abs.obs <- apply(obsojeni[1:12,2:9],2,mean)
