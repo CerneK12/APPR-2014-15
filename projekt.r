@@ -3,6 +3,7 @@
 
 #source("uvoz/uvoz.r")
 
+
 source("uvoz/csv_obsojeni.r") #obsojeni
 source("uvoz/csv_diplomanti.r") #diplomanti
 source("uvoz/xml_obsojeni.R") #xml-obsojeni
@@ -20,8 +21,8 @@ source("vizualizacija/vizualizacija_diplomanti.r")
 
 
 # 4. faza: Napredna analiza podatkov
-source("analiza/analiza.od.povprecno.R")
-source("analiza/zemljevid_diplomantov.R")
+source("analiza/analiza.od.povprecno.r")
+source("analiza/zemljevid_diplomantov.r")
 
 
 #cat("Končano.\n")
