@@ -14,7 +14,6 @@ source("uvoz/graf_diplomanti.R") #graf-diplomanti
 source("uvoz/graf_zasavska.R") #graf-zasavska
 
 
-
 # 3. faza: Analiza in vizualizacija podatkov
 source("vizualizacija/vizualizacija_obsojeni.r")
 source("vizualizacija/vizualizacija_diplomanti.r")
