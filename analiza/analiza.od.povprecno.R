@@ -19,13 +19,13 @@ twoord.plot(leta,
             leta,
             abs.obs,
             xlab="Leta",
-            ylab="povprečen delež obsojenih",
-            rylab="povprečen delež diplomantov",
-            main ="Diplomanti in obsojeni v Sloveniji")
+            ylab="obsojeni",
+            rylab="diplomanti",
+            main ="Povprecni delezi diplomantov in obsojenih v Sloveniji")
 
 legend("topleft",
-       legend = c("povprečen delež diplomantov",
-                  "povprečen delež obsojenih"),
+       legend = c("DIPLOMANTI",
+                  "OBSOJENI"),
        col = c("red","black"),
        lty = c("solid", "solid"),
        pch = c(2,1),
