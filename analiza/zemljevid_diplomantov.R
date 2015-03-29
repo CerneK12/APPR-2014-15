@@ -36,6 +36,9 @@ min.2012 <- min(DIPLOMANTI[7], na.rm=TRUE)
 max.2012 <- max(DIPLOMANTI[7], na.rm=TRUE)
 min.2013 <- min(DIPLOMANTI[8], na.rm=TRUE)
 max.2013 <- max(DIPLOMANTI[8], na.rm=TRUE)
+max.DIPLOMANTI <- max(DIPLOMANTI)
+min.DIPLOMANTI <- min(DIPLOMANTI)
+at <- seq(min.DIPLOMANTI, max.DIPLOMANTI, (max.DIPLOMANTI-min.DIPLOMANTI)/16)
 
 popravek.koordinat <- c(0,0,0,0,0,0,-4000,0,0,0,0,0,0,0,0,0,0,3000,-3000,0,0,0,0,-7000)
 
@@ -45,15 +48,16 @@ cat("Rišem zemljevid diplomantov od leta 2006 do leta 2013\n")
 pdf("slike/diplomanti_1.pdf", width=6, height=4)
 
 regije$x2006 <- DIPLOMANTI[,1]
-print(spplot(regije, "x2006", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2006",
+print(spplot(regije, "x2006", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2006", at = at,
              sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.4))))
+
 dev.off()
 
 
 pdf("slike/diplomanti_2.pdf", width=6, height=4)
 
 regije$x2007 <- DIPLOMANTI[,2]
-print(spplot(regije, "x2007", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2007",
+print(spplot(regije, "x2007", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2007", at = at,
              sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.4))))
 dev.off()
 
@@ -61,7 +65,7 @@ dev.off()
 pdf("slike/diplomanti_3.pdf", width=6, height=4)
 
 regije$x2008 <- DIPLOMANTI[,3]
-print(spplot(regije, "x2008", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2008",
+print(spplot(regije, "x2008", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2008", at = at,
              sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.4))))
 dev.off()
 
@@ -69,7 +73,7 @@ dev.off()
 pdf("slike/diplomanti_4.pdf", width=6, height=4)
 
 regije$x2009 <- DIPLOMANTI[,4]
-print(spplot(regije, "x2009", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2009",
+print(spplot(regije, "x2009", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2009", at = at,
              sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.4))))
 dev.off()
 
@@ -77,7 +81,7 @@ dev.off()
 pdf("slike/diplomanti_5.pdf", width=6, height=4)
 
 regije$x2010 <- DIPLOMANTI[,5]
-print(spplot(regije, "x2010", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2010",
+print(spplot(regije, "x2010", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2010", at = at,
              sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.4))))
 dev.off()
 
@@ -85,7 +89,7 @@ dev.off()
 pdf("slike/diplomanti_6.pdf", width=6, height=4)
 
 regije$x2011 <- DIPLOMANTI[,6]
-print(spplot(regije, "x2011", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2011",
+print(spplot(regije, "x2011", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2011", at = at,
              sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.4))))
 dev.off()
 
@@ -93,7 +97,7 @@ dev.off()
 pdf("slike/diplomanti_7.pdf", width=6, height=4)
 
 regije$x2012 <- DIPLOMANTI[,7]
-print(spplot(regije, "x2012", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2012",
+print(spplot(regije, "x2012", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2012", at = at,
              sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.4))))
 dev.off()
 
@@ -101,7 +105,7 @@ dev.off()
 pdf("slike/diplomanti_8.pdf", width=6, height=4)
 
 regije$x2013 <- DIPLOMANTI[,8]
-print(spplot(regije, "x2013", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2013",
+print(spplot(regije, "x2013", col = heat.colors(100), main = "Diplomanti v Sloveniji za leto 2013", at = at,
              sp.layout = list(list("sp.text", coordinates(regije) + popravek.koordinat , regije$IME, cex = 0.4))))
 
 dev.off()
